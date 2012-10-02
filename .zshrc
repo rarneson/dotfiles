@@ -1,3 +1,13 @@
+# Add `~/bin` to the `$PATH`
+export PATH="$HOME/bin:$PATH"
+
+# Load ~/.extra, ~/.bash_prompt, ~/.exports, ~/.aliases and ~/.functions
+# ~/.extra can be used for settings you don’t want to commit
+for file in ~/.{extra,exports,aliases,functions}; do
+  [ -r "$file" ] && source "$file"
+done
+unset file
+
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
 
@@ -5,7 +15,7 @@ ZSH=$HOME/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each time that oh-my-zsh is loaded.
 # Keep in mind the Solarized them is loaded as a preset in iTerm > Profiles
-# ZSH_THEME="hipster"
+ZSH_THEME="hipster"
 
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"

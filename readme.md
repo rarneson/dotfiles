@@ -2,13 +2,13 @@
 
 [mathias's readme](https://github.com/mathiasbynens/dotfiles/) is awesome. go read it.
 
-This is a fork of [Paul Irish's dotfiles](https://github.com/paulirish/dotfiles), which is a fork of [Mathias's](https://github.com/mathiasbynens/dotfiles/).
+This is a fork of [Paul Irish's dotfiles](https://github.com/paulirish/dotfiles), which is a fork of [mathias's](https://github.com/mathiasbynens/dotfiles/).
 
-## install the neccessary apps
+<!-- ## Install the neccessary apps
 
-My basic setup is captured in `install-deps.sh` which adds homebrew, z, nave, etc.
+My basic setup is captured in `install-deps.sh` which adds homebrew, z, nave, etc.  -->
 
-## private config
+<!-- ## Private config
 
 Toss it into a file called `.extra` which you do not commit to this repo and just keep in your `~/`
 
@@ -24,7 +24,7 @@ PATH=$PATH:~/code/git-friendly
 # ...
 
 export PATH
-```
+``` -->
 
 ## Syntax highlighting
 
