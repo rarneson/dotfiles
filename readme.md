@@ -2,29 +2,11 @@
 
 [mathias's readme](https://github.com/mathiasbynens/dotfiles/) is awesome. go read it.
 
-This is a fork of [Paul Irish's dotfiles](https://github.com/paulirish/dotfiles), which is a fork of [mathias's](https://github.com/mathiasbynens/dotfiles/).
+This is a fork of [Paul Irish's dotfiles](https://github.com/paulirish/dotfiles), which is a fork of [mathias's](https://github.com/mathiasbynens/dotfiles/). However, since I'm using zsh and not bash, I've removed quite a few dotfiles.
 
-<!-- ## Install the neccessary apps
+## Dependancies and Niceties
 
-My basic setup is captured in `install-deps.sh` which adds homebrew, z, nave, etc.  -->
-
-<!-- ## Private config
-
-Toss it into a file called `.extra` which you do not commit to this repo and just keep in your `~/`
-
-I do something nice with my `PATH` there:
-
-```shell
-# PATH like a bawss
-      PATH=/opt/local/bin
-PATH=$PATH:/opt/local/sbin
-PATH=$PATH:/bin
-PATH=$PATH:~/.rvm/bin
-PATH=$PATH:~/code/git-friendly
-# ...
-
-export PATH
-``` -->
+Some dependancies and features that are nice to have are captured in `install-deps.sh` which adds homebrew, z, nave, etc. Run at your leisure.
 
 ## Syntax highlighting
 
@@ -41,42 +23,31 @@ When setting up a new Mac, you may want to set some sensible OS X defaults:
 ./.osx
 ```
 
-## Similar projects
-
-I recommend getting a [`.jshintrc`](https://github.com/jshint/node-jshint/blob/master/.jshintrc) and [`.editorconfig`](http://editorconfig.org/) defined for all your projects.
-
-
-
-
 
 ## overview of files
 
 ####  Automatic config
 * `.ackrc` - for ack (better than grep)
-* `.vimrc`, `.vim` - vim config, obv.
 
 #### shell environement
 * `.aliases`
-* `.bash_profile`
-* `.bash_prompt`
-* `.bashrc`
+* `.zshrc`
 * `.exports`
 * `.functions`
-* `.extra` - not included, explained above
 
 #### manual run
-* `install-deps.sh` - random apps i need installed
+* `install-deps.sh` - random apps
 * `.osx` - run on a fresh osx machine
 * `.brew` - homebrew intialization
 
-#### git, brah
+#### git
 * `.git`
 * `.gitattributes`
 * `.gitconfig`
 * `.gitignore`
 
-* `.inputrc` - config for bash readline
-
+#### zsh-theme
+* `hipster.zsh-theme` - yeah, it's not a dotfile
 
 ## Installation
 
