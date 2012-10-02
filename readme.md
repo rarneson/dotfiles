@@ -45,8 +45,8 @@ When setting up a new Mac, you may want to set some sensible OS X defaults:
 #### git
 * `.git`
 * `.gitattributes`
-* `.gitconfig`
-* `.gitignore`
+* `.gitconfig` - global config, including aliases
+* `.gitignore` - global gitignore
 
 #### zsh-theme
 * `hipster.zsh-theme` - yeah, it's not a dotfile
