@@ -7,17 +7,18 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias -- -="cd -"
 
 # Shortcuts -- from mathiasbynens (https://github.com/mathiasbynens/dotfiles/blob/master/.aliases)
-alias d="cd ~/Documents/Dropbox"
+alias d="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias dt="cd ~/Desktop"
 alias p="cd ~/Projects"
+alias s="cd ~/Sites"
 alias hm="cd ~/"
 alias g="git"
 alias h="history"
 alias j="jobs"
 alias v="vim"
 alias m="mate ."
-alias s="subl ."
+# alias s="subl ."
 alias o="open"
 alias oo="open ."
 
