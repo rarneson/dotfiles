@@ -1,5 +1,7 @@
 # Ryan's dotfiles.
 
+These are my dotfiles for the zsh shell using [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh).
+
 [mathias's readme](https://github.com/mathiasbynens/dotfiles/) is awesome. go read it.
 
 This is a fork of [Paul Irish's dotfiles](https://github.com/paulirish/dotfiles), which is a fork of [mathias's](https://github.com/mathiasbynens/dotfiles/). However, since I'm using zsh and not bash, I've removed quite a few dotfiles.
@@ -24,9 +26,9 @@ When setting up a new Mac, you may want to set some sensible OS X defaults:
 ```
 
 
-## overview of files
+## Overview of files
 
-####  Automatic config
+####  automatic config
 * `.ackrc` - for ack (better than grep)
 
 #### shell environement
