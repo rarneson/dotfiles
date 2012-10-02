@@ -2,7 +2,7 @@
 
 [mathias's readme](https://github.com/mathiasbynens/dotfiles/) is awesome. go read it.
 
-This repo is mostly for me but you're welcome to make suggestions. Mathias's is the project to fork.  I'm mostly catching up to him, @cowboy, and @gf3.
+This is a fork of [Paul Irish's dotfiles](https://github.com/paulirish/dotfiles), which is a fork of [Mathias's](https://github.com/mathiasbynens/dotfiles/).
 
 ## install the neccessary apps
 

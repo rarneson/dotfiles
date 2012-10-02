@@ -1,5 +1,5 @@
 # Make vim the default editor
-export EDITOR="vim"
+export EDITOR="subl"
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X"
 
@@ -9,3 +9,34 @@ export HISTFILESIZE=$HISTSIZE
 export HISTCONTROL=ignoredups
 # Make some commands not show up in history
 export HISTIGNORE="ls:ls *:cd:cd -:pwd;exit:date:* --help"
+
+# Android tools for Boot 2 Gecko
+ANDROID_TOOLS=/Users/rarneson/Documents/android-sdk-macosx/platform-tools;
+export ANDROID_TOOLS
+export PATH=$PATH:$ANDROID_TOOLS
+
+# Add RVM to PATH for scripting
+export PATH=$PATH:$HOME/.rvm/bin
+
+# MySQL
+export MYSQL_BIN=/usr/local/mysql/bin;
+export PATH=$PATH:$MYSQL_BIN
+export MYSQL_LIB=/usr/local/mysql/lib:
+export PATH=$PATH:$MYSQL_LIB
+
+# PostgreSQL
+export PATH=$PATH:/Library/PostgreSQL/9.1/bin/
+export ARCHFLAGS='-arch x86_64' # Needed this for 'pg' bundle install
+
+# Oracle
+export NLS_LANG="AMERICAN_AMERICA.UTF8"
+export ORACLE_HOME=/opt/oracle/instantclient
+export DYLD_LIBRARY_PATH=$ORACLE_HOME
+export LD_LIBRARY_PATH=/opt/oracle/instantclient
+export PATH=$PATH:$ORACLE_HOME
+
+export ORACLE_BIN=/opt/oracle/instantclient;
+export PATH=$PATH:$ORACLE_BIN
+
+# SVN
+export SVN_EDITOR='vim'
