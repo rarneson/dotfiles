@@ -17,7 +17,6 @@ alias p="cd ~/Photos"
 alias hm="cd ~/"
 alias g="git"
 alias h="history"
-alias v="vim"
 alias o="open"
 alias oo="open ."
 
@@ -26,6 +25,7 @@ alias subl='open -a "Sublime Text 2"'
 
 # control Spotify from the shell
 alias sp="osascript ~/Code/SpotifyControl/SpotifyControl.scpt"
+alias v="sp volume" # a number between 0 and 100
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -100,7 +100,3 @@ alias hosts="subl /etc/hosts"
 # Rails stuff
 alias restart="touch tmp/restart.txt" # Restart the instance of Passenger
 alias rmigc="rake db:migrate && rake db:test:clone"
-
-# VPS
-alias linode="ssh rarneson@50.116.31.167"
-alias linoderoot="ssh root@50.116.31.167"
