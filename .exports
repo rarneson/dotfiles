@@ -1,5 +1,5 @@
 # Make vim the default editor
-export EDITOR="subl"
+export EDITOR="vim"
 # Don’t clear the screen after quitting a manual page
 export MANPAGER="less -X"
 
@@ -26,7 +26,7 @@ export PATH=$PATH:$MYSQL_LIB
 
 # PostgreSQL
 export PATH=$PATH:/Library/PostgreSQL/9.1/bin/
-export ARCHFLAGS='-arch x86_64' # Needed this for 'pg' bundle install
+export ARCHFLAGS='-arch x86_64'
 
 # Oracle
 export NLS_LANG="AMERICAN_AMERICA.UTF8"
