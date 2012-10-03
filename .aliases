@@ -7,7 +7,7 @@ alias ~="cd ~" # `cd` is probably faster to type though
 alias b="cd -" # back
 
 # Shortcuts -- from mathiasbynens (https://github.com/mathiasbynens/dotfiles/blob/master/.aliases)
-alias d="cd ~/Desktop"
+alias dt="cd ~/Desktop"
 alias db="cd ~/Dropbox"
 alias dl="cd ~/Downloads"
 alias c="cd ~/Code"
