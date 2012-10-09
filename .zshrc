@@ -47,4 +47,4 @@ source $ZSH/oh-my-zsh.sh
 alias mapachectl='/Applications/MAMP/Library/bin/apachectl'
 alias ffb2g="/Applications/FirefoxNightly.app/Contents/MacOS/firefox -profile /Users/rarneson/Sites/b2g/gaia/profile -no-remote http://homescreen.gaiamobile.org"
 alias adb="/Users/rarneson/Documents/android-sdk-macosx/platform-tools/adb"
-alias reload_profile='. ~/.zshrc'
+alias reload='. ~/.zshrc'
