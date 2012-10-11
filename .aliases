@@ -23,6 +23,9 @@ alias oo="open ."
 # programs
 alias subl='open -a "Sublime Text 2"'
 
+# Reload so we don't have to open a new terminal window
+alias reload='. ~/.zshrc'
+
 # control Spotify from the shell
 alias sp="osascript ~/Code/SpotifyControl/SpotifyControl.scpt"
 alias v="sp volume" # a number between 0 and 100
