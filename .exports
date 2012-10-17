@@ -25,7 +25,7 @@ export MYSQL_LIB=/usr/local/mysql/lib:
 export PATH=$PATH:$MYSQL_LIB
 
 # PostgreSQL
-export PATH=$PATH:/Library/PostgreSQL/9.1/bin/
+export PATH=$PATH:/Library/PostgreSQL/9.1/bin
 export ARCHFLAGS='-arch x86_64'
 
 # Oracle
