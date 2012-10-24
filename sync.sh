@@ -2,7 +2,7 @@
 cd "$(dirname "$0")"
 git pull
 function doIt() {
-  rsync --exclude ".git/" --exclude ".DS_Store" --exclude "sync.sh" --exclude "install-deps.sh" --exclude ".brew" --exclude ".osx" --exclude "readme.md" -av . ~
+  rsync --exclude ".git/" --exclude ".DS_Store" --exclude "sync.sh" --exclude "install-deps.sh" --exclude ".brew" --exclude ".osx" --exclude "readme.md" --exclude "zsh-theme" -av . ~
   rsync -av zsh-theme/* ~/.oh-my-zsh/themes
 }
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
