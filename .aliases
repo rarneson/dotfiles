@@ -4,7 +4,7 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
 alias ~="cd ~" # `cd` is probably faster to type though
-alias b="cd -" # back
+alias back="cd -" # back
 
 # Shortcuts -- from mathiasbynens (https://github.com/mathiasbynens/dotfiles/blob/master/.aliases)
 alias dt="cd ~/Desktop"
@@ -14,7 +14,7 @@ alias c="cd ~/Code"
 alias s="cd ~/Sites"
 alias m="cd ~/Music"
 alias p="cd ~/Photos"
-alias hm="cd ~/"
+alias home="cd ~/"
 alias g="git"
 alias h="history"
 alias o="open"
