@@ -1,0 +1,89 @@
+{
+	"color_scheme": "Packages/Color Scheme - Default/Monokai.tmTheme",
+	"detect_indentation": false,
+	"detect_slow_plugins": false,
+	"draw_minimap_border": true,
+	"fade_fold_buttons": false,
+	"file_exclude_patterns":
+	[
+		"*.pyc",
+		"*.pyo",
+		"*.exe",
+		"*.dll",
+		"*.obj",
+		"*.o",
+		"*.a",
+		"*.lib",
+		"*.so",
+		"*.dylib",
+		"*.ncb",
+		"*.sdf",
+		"*.suo",
+		"*.pdb",
+		"*.idb",
+		".DS_Store",
+		"*.class",
+		"*.psd",
+		"*.db",
+		"*.sublime-project",
+		"*.sublime-workspace",
+		".project",
+		"*.iml",
+		"*.cache"
+	],
+	"find_selected_text": true,
+	"folder_exclude_patterns":
+	[
+		".svn",
+		".hg",
+		"CVS",
+		".idea",
+		".generated",
+		".metadata"
+	],
+	"font_face": "Monaco",
+	"font_size": 17.0,
+	"highlight_line": true,
+	"highlight_modified_tabs": true,
+  "caret_style": "phase",
+  "line_padding_bottom": 1,
+  "line_padding_top": 1,
+  "bold_folder_labels": true,
+	"ignored_packages":
+	[
+		"Vintage"
+	],
+	"jshint_options":
+	{
+		"browser": true,
+		"curly": true,
+		"dojo": false,
+		"eqeqeq": true,
+		"eqnull": true,
+		"evil": false,
+		"expr": true,
+		"jquery": true,
+		"mootools": false,
+		"prototypejs": false,
+		"trailing": true,
+		"undef": false
+	},
+	"margin": 0,
+	"tab_size": 2,
+	"theme": "Soda Dark.sublime-theme",
+	"todo":
+	{
+		"case_sensitive": true,
+		"folder_exclude_patterns":
+		[
+			"tmp"
+		],
+		"patterns":
+		{
+			"TODO": "TODO[\\s]*?:+(?P<todo>.*)$"
+		},
+		"result_title": "TODO Results"
+	},
+	"translate_tabs_to_spaces": true,
+	"word_wrap": false
+}

@@ -2,8 +2,9 @@
 cd "$(dirname "$0")"
 git pull
 function doIt() {
-  rsync --exclude ".git/" --exclude ".DS_Store" --exclude "sync.sh" --exclude "install-deps.sh" --exclude ".brew" --exclude ".osx" --exclude "readme.md" --exclude "zsh-theme" -av . ~
+  rsync --exclude ".git/" --exclude ".DS_Store" --exclude "sync.sh" --exclude "install-deps.sh" --exclude ".brew" --exclude ".osx" --exclude "readme.md" --exclude "zsh-theme" --exclude "misc" -av . ~
   rsync -av zsh-theme/* ~/.oh-my-zsh/themes
+  rsync -av misc/Preferences.sublime-settings ~/Library/Application\ Support/Sublime\ Text\ 2/Packages/User 
 }
 if [ "$1" == "--force" -o "$1" == "-f" ]; then
   doIt
