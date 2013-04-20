@@ -42,3 +42,4 @@ COMPLETION_WAITING_DOTS="true"
 plugins=(svn git)
 
 source $ZSH/oh-my-zsh.sh
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
