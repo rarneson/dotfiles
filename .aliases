@@ -103,3 +103,5 @@ alias hosts="subl /etc/hosts"
 # Rails stuff
 alias restart="touch tmp/restart.txt" # Restart the instance of Passenger
 alias rmigc="rake db:migrate && rake db:test:clone"
+
+alias elastic="elasticsearch -f -D es.config=/usr/local/opt/elasticsearch/config/elasticsearch.yml"
