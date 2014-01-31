@@ -3,7 +3,6 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias .....="cd ../../../.."
-alias ~="cd ~" # `cd` is probably faster to type though
 alias back="cd -" # back
 
 # Shortcuts -- from mathiasbynens (https://github.com/mathiasbynens/dotfiles/blob/master/.aliases)
@@ -81,7 +80,10 @@ alias pumpitup="osascript -e 'set volume 10'"
 alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
 
 # ColdFusion stuff
+# multi instance
 alias jrun='/Applications/JRun4/bin/jrun'
+# single instance
+# alias coldfusion='/Applications/ColdFusion10/cfusion/bin/coldfusion'
 # This command is useless. You still have to be in the solr directory to run it.
 # http://www.samfarmer.com/blog/Starting-Solr-for-ColdFusion-on-a-Mac
 # alias cfsolr='/Applications/JRun4/servers/cfusion/cfusion-ear/cfusion-war/WEB-INF/cfusion/solr/cfsolr'
@@ -109,4 +111,3 @@ alias vlc="/Applications/VLC.app/Contents/MacOS/vlc"
 alias aliases="subl ~/.aliases"
 alias exports="subl ~/.exports"
 alias extra="subl ~/.extra"
-alias functions="subl ~/.functions"
