@@ -100,8 +100,10 @@ alias hosts="subl /etc/hosts"
 alias restart="touch tmp/restart.txt" # Restart the instance of Passenger
 alias rmigc="rake db:migrate && rake db:test:clone"
 
-# Misc dev stuff
+# Start elastic search
 alias elastic="elasticsearch -d -D es.config=/usr/local/opt/elasticsearch/config/elasticsearch.yml"
+
+# Start Postgres
 alias pg="pg_ctl start -D /usr/local/var/postgres -l logfile"
 
 # VLC command line
