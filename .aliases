@@ -1,10 +1,3 @@
-# Easier navigation: .., ..., ~ and -
-alias ..="cd .."
-alias ...="cd ../.."
-alias ....="cd ../../.."
-alias .....="cd ../../../.."
-alias back="cd -" # back
-
 # Shortcuts -- from mathiasbynens (https://github.com/mathiasbynens/dotfiles/blob/master/.aliases)
 alias dt="cd ~/Desktop"
 alias db="cd ~/Dropbox"
@@ -12,18 +5,13 @@ alias dl="cd ~/Downloads"
 alias c="cd ~/Code"
 alias home="cd ~/"
 alias h="history"
-alias o="open"
 alias oo="open ."
 
 # programs
-alias subl='open -a "Sublime Text 2"'
+alias atom='open -a "Atom"'
 
 # Reload so we don't have to open a new terminal window
 alias reload='. ~/.zshrc'
-
-# control Spotify from the shell
-alias sp="osascript ~/Code/SpotifyControl/SpotifyControl.scpt"
-alias v="sp volume" # a number between 0 and 100
 
 # Detect which `ls` flavor is in use
 if ls --color > /dev/null 2>&1; then # GNU `ls`
@@ -32,11 +20,8 @@ else # OS X `ls`
   colorflag="-G"
 fi
 
-# List all files colorized in long format
-alias l="ls -l ${colorflag}"
-
 # List all files colorized in long format, including dot files
-alias la="ls -la ${colorflag}"
+alias l="ls -la ${colorflag}"
 
 # List only directories
 alias lsd='ls -l | grep "^d"'
@@ -60,56 +45,36 @@ alias whois="whois -h whois-servers.net"
 # Flush Directory Service cache
 alias flush="dscacheutil -flushcache"
 
-# View HTTP traffic
-alias sniff="sudo ngrep -d 'en1' -t '^(GET|POST) ' 'tcp and port 80'"
-alias httpdump="sudo tcpdump -i en1 -n -s 0 -w - | grep -a -o -E \"Host\: .*|GET \/.*\""
-
 # Recursively delete `.DS_Store` files
 alias cleanup="find . -name '*.DS_Store' -type f -ls -delete"
 
 # Empty the Trash on all mounted volumes and the main HDD
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; rm -rfv ~/.Trash"
 
-# Hide/show all desktop icons (useful when presenting)
-alias hidedesktop="defaults write com.apple.finder CreateDesktop -bool false && killall Finder"
-alias showdesktop="defaults write com.apple.finder CreateDesktop -bool true && killall Finder"
-
-# Stuff I never really use but cannot delete either because of http://xkcd.com/530/
-alias stfu="osascript -e 'set volume output muted true'"
-alias pumpitup="osascript -e 'set volume 10'"
-alias hax="growlnotify -a 'Activity Monitor' 'System error' -m 'WTF R U DOIN'"
-
-# ColdFusion stuff
-# multi instance
-alias jrun='/Applications/JRun4/bin/jrun'
-# single instance
-# alias coldfusion='/Applications/ColdFusion10/cfusion/bin/coldfusion'
-# This command is useless. You still have to be in the solr directory to run it.
-# http://www.samfarmer.com/blog/Starting-Solr-for-ColdFusion-on-a-Mac
-# alias cfsolr='/Applications/JRun4/servers/cfusion/cfusion-ear/cfusion-war/WEB-INF/cfusion/solr/cfsolr'
-
 # ZSH shell stuff
-alias zshrc="subl ~/.zshrc"
+alias zshrc="code ~/.zshrc"
 
 # Apache stuff
-alias vhosts="subl /etc/apache2/extra/httpd-vhosts.conf"
-alias httpd="subl /etc/apache2/httpd.conf"
-alias hosts="subl /etc/hosts"
-
-# Rails stuff
-alias restart="touch tmp/restart.txt" # Restart the instance of Passenger
-alias rmigc="rake db:migrate && rake db:test:clone"
-
-# Start elastic search
-alias elastic="elasticsearch -d -D es.config=/usr/local/opt/elasticsearch/config/elasticsearch.yml"
-
-# Start Postgres
-alias pg="pg_ctl start -D /usr/local/var/postgres -l logfile"
-
-# VLC command line
-alias vlc="/Applications/VLC.app/Contents/MacOS/vlc"
+alias vhosts="code /etc/apache2/extra/httpd-vhosts.conf"
+alias httpd="code /etc/apache2/httpd.conf"
+alias hosts="code /etc/hosts"
 
 # dotfile aliases
-alias aliases="subl ~/.aliases"
-alias exports="subl ~/.exports"
-alias extra="subl ~/.extra"
+alias aliases="code ~/.aliases"
+alias exports="code ~/.exports"
+
+# kill all running docker containers
+alias dsa='docker stop $(docker ps -a -q)'
+alias dka='docker kill $(docker ps -a -q)'
+alias drestart="cd ~/Code && ./docker-restart.sh"
+alias dprune='docker rmi $(docker images -f "dangling=true" -q)'
+
+# control Spotify from the shell
+alias s="osascript ~/Code/SpotifyControl/SpotifyControl.scpt"
+alias v="s volume" # a number between 0 and 100
+
+alias afk='/System/Library/Frameworks/ScreenSaver.framework/Resources/ScreenSaverEngine.app/Contents/MacOS/ScreenSaverEngine'
+
+alias mplsw="curl wttr.in/minneapolis"
+alias amesw="curl wttr.in/ames"
+alias moonme="curl http://wttr.in/Moon"
